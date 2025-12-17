@@ -270,7 +270,7 @@ class AddReminderDialog:
 
         self.window = tk.Toplevel(parent)
         self.window.title("Add Reminder")
-        self.window.geometry("450x500")
+        self.window.geometry("450x580")
         self.window.configure(bg=app.bg_color)
         self.window.transient(parent)
         self.window.grab_set()
@@ -278,7 +278,7 @@ class AddReminderDialog:
         # Center the dialog
         self.window.update_idletasks()
         x = parent.winfo_x() + (parent.winfo_width() - 450) // 2
-        y = parent.winfo_y() + (parent.winfo_height() - 500) // 2
+        y = parent.winfo_y() + (parent.winfo_height() - 580) // 2
         self.window.geometry(f"+{x}+{y}")
 
         self.create_form()
